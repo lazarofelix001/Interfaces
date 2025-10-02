@@ -1,0 +1,16 @@
+/* (Opcional) html { font-size: ... } para probar escalado */
+.nav {
+    /* TODO: Contenedor con % de ancho, centrado, padding en rem */
+}
+
+.nav__brand {
+    /* TODO: Tamaño de fuente con rem; espaciado */
+}
+
+.nav__links {
+    /* TODO: Reset de lista y distribución horizontal */
+}
+
+.nav__links a {
+    /* TODO: Padding en rem y tamaño relativo */
+}

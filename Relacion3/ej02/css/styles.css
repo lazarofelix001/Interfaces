@@ -1,0 +1,38 @@
+.layout {
+    /* TODO: Contenedor centrado con ancho máximo y márgenes auto */
+    max-width: 1000px;  /*Se configura el maximo de ancho a 1000px*/
+    margin: 0 auto; /* Se establece el margen horizontal en auto y el vertical en 0*/
+    padding: 2rem; /*Margen interior con respecto a los 16px por defecto de html*/
+}
+
+.card {
+    /* TODO: Ancho en %, borde/sombra, radio, overflow si procede */    
+    width: 90%; /* Ancho del 90%*/
+    max-width: 600px; /* Maximo del ancho*/
+    margin: 2rem auto; /* Margen horizontal en auto, y vertical 2rem con respecto a los 16px*/
+    border-radius: 10rem; /*No cambia nada*/
+    border: 1 solid red; /*Tampoco cambia nada*/
+    overflow: scroll; /* Lo puse por aburrimiento, genera una barra de scroll para ver lo que se "corta"*/
+}
+
+.card__img {
+    /* TODO: display:block; width:100%; height:auto; */
+    display: block; /* Para que se comporte como un bloque*/
+    width: 100%; /* ancho del 100% con respecto al .card*/
+    height: auto; /* automatico, creo que por defecto 16px*/
+    border-radius: 40%; /* Redondea la imagen*/
+    border: 2px solid red; /*Se cambia el color del borde a rojo y se ajustan 2px de ancho*/
+}
+
+.card__body {
+    /* TODO: Usa rem para paddings */
+    padding: 1.5rem; /* Padding de 1.5 con respecto a los 16 por defecto*/
+    display: flex; /* Para que se comporte como un contenedor flex*/
+    flex-direction: row-reverse;
+}
+
+.card__title,
+.card__text {
+    /* TODO: Tipografía con rem */
+    font-size: 1.5rem; /* otro rem*/
+} 

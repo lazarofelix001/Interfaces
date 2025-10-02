@@ -1,0 +1,36 @@
+/* Estilos base para los ejercicios de Flexbox */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .container {
+    display: flex;
+    border: 2px solid #bd0606;
+    padding: 10px;
+    height: 300px; /* altura fija para probar align-items y align-self */
+    gap: 10px;
+    flex-direction: row-reverse;
+  }
+  
+  .box {
+    background-color: #041c26;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    border-radius: 4px;
+    flex: 0 0 100px; /* ancho base para ver mejor los efectos */
+  }

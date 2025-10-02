@@ -1,0 +1,24 @@
+/* TODO: Define un contenedor general si lo necesitas */
+/* TODO: Crea columnas con anchos en % y separaciones en rem */
+.site-header,
+.site-footer {
+    /* TODO: Espaciado con rem */
+}
+
+.site-main {
+    /* TODO: Distribución de columnas (inline-block/flex) */
+}
+
+.col {
+    /* TODO: Márgenes/padding en rem; ancho en % */
+}
+
+.col--a {
+    /* TODO */
+}
+
+.col--b {
+    /* TODO */
+}
+
+/* .col--c {  Opcional } */

@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  background: #f9f9f9;
+  color: #333;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 16px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 8px 12px;
+  background: #004466;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.btn:hover {
+  background: #006699;
+}
+
+/* TODO: Convierte .cards en flex con wrap, gap 16px y align-items:stretch */
+.cards {
+  /* TODO */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: stretch;
+}
+
+/* TODO: Haz .card una columna flex y deja 1 columna en móvil */
+.card {
+  /* TODO */
+  display: flex;
+  flex-direction: column;
+  width: calc(33% + 3em);
+}
+
+/* TODO: Asegura que .btn se quede al fondo */
+.card .btn {
+  /* TODO */
+  justify-content: end;
+}
+
+/* TODO: Tablet 2 columnas (≥768px) */
+@media (min-width: 768px) {
+  .card {
+    /* TODO */
+
+  }
+}
+
+/* TODO: Desktop 3 columnas (≥1024px) */
+@media (min-width: 1024px) {
+  .card {
+    /* TODO */
+  }
+}
