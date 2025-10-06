@@ -1,0 +1,14 @@
+* { box-sizing: border-box; }
+body {
+  font-family: system-ui, sans-serif;
+  margin: 24px;
+}
+/* TODO: aplicar grid 3x3 con gap, posicionamientos y alineaciones */
+.card {
+  background: #eaf1ff;
+  border: 1px solid #c8d9ff;
+  padding: 16px;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 8px;
+}

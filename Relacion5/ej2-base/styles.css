@@ -1,0 +1,4 @@
+* { box-sizing: border-box; }
+body { font-family: system-ui, sans-serif; margin: 24px; }
+/* TODO: aplicar grid con auto-fit y minmax */
+.item img { width: 100%; display: block; }

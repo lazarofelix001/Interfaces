@@ -1,0 +1,5 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, sans-serif; }
+/* TODO: definir grid-template-areas para móvil y escritorio */
+.layout { min-height: 100vh; }
+.box { padding: 16px; }
