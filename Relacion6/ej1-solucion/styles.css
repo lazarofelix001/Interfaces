@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box
+}
+
+body {
+    font-family: system-ui, sans-serif;
+    margin: 16px
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    max-width: 1000px;
+    margin: 0 auto
+}
+
+.card {
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    overflow: hidden;
+    padding: 12px;
+    background: #fff
+}
+
+/* TODO: hacer IMG fluida sin distorsión */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block
+}
+
+@media (min-width:768px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr)
+    }
+}

@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box
+}
+
+body {
+    font-family: system-ui, sans-serif;
+    margin: 16px
+}
+
+figure {
+    margin: 0
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 16px;
+    max-width: 1200px;
+    margin: 0 auto
+}
+
+.item {
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #fff
+}
+
+.item img {
+    width: 100%;
+    display: block
+}
+
+.item figcaption {
+    padding: 10px;
+    text-align: center;
+    color: #374151
+}
+
+/* TODO: añadir srcset y sizes en el HTML */

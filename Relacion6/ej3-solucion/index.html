@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Ej3 - 1x/2x + picture (SOLUCIÓN)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>1x/2x + picture (SOLUCIÓN)</h1>
+  <section>
+    <h2>Imagen con densidades</h2>
+    <img class="avatar"
+      src="https://picsum.photos/seed/avatar/200/200"
+      srcset="https://picsum.photos/seed/avatar/200/200 1x, https://picsum.photos/seed/avatar/400/400 2x"
+      alt="Avatar nítido en Retina">
+  </section>
+  <section class="hero">
+    <h2>Hero responsive (picture)</h2>
+    <picture>
+      <source media="(min-width: 1024px)" srcset="https://picsum.photos/seed/hero-wide/1400/500">
+      <img class="hero-img" src="https://picsum.photos/seed/hero-tall/700/900" alt="Hero adaptable">
+    </picture>
+  </section>
+</body>
+</html>

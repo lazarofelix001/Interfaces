@@ -10,7 +10,26 @@ body {
   color: #333;
 }
 
-.card {
+header,
+footer {
+  background: #004466;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.sidebar {
+  background: #e0e0e0;
+  padding: 20px;
+}
+
+.content {
+  background: #fff;
+  padding: 20px;
+}
+
+.card,
+.plan {
   background: #fff;
   border: 1px solid #ddd;
   border-radius: 6px;
@@ -31,40 +50,46 @@ body {
   background: #006699;
 }
 
+.nav {
+  background: #004466;
+  color: #fff;
+  padding: 12px;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
 /* TODO: Convierte .cards en flex con wrap, gap 16px y align-items:stretch */
 .cards {
   /* TODO */
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-  align-items: stretch;
 }
 
 /* TODO: Haz .card una columna flex y deja 1 columna en móvil */
 .card {
   /* TODO */
-  display: flex;
-  flex-direction: column;
-  width: calc(33% + 3em);
 }
 
 /* TODO: Asegura que .btn se quede al fondo */
-.card .btn {
-  /* TODO */
-  justify-content: end;
+.card .btn { 
+  /* TODO */ 
 }
 
 /* TODO: Tablet 2 columnas (≥768px) */
 @media (min-width: 768px) {
-  .card {
-    /* TODO */
-
+  .card { 
+    /* TODO */ 
   }
 }
 
 /* TODO: Desktop 3 columnas (≥1024px) */
 @media (min-width: 1024px) {
-  .card {
-    /* TODO */
+  .card { 
+    /* TODO */ 
   }
 }

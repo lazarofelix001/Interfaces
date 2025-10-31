@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <title>Ej2 - srcset + sizes (SOLUCIÓN)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <h1>srcset + sizes (SOLUCIÓN)</h1>
+  <div class="gallery">
+    <figure class="item">
+      <img src="https://picsum.photos/seed/a/480/320" 
+      srcset="https://picsum.photos/seed/a/480/320 480w,
+                https://picsum.photos/seed/b/768/512 768w,
+                https://picsum.photos/seed/c/1024/683 1024w" 
+                sizes="(max-width: 600px) 100vw, 
+        (max-width: 1023px) 80vw, 
+        60vw" alt="Foto responsive A">
+      <figcaption>Foto A</figcaption>
+    </figure>
+    <figure class="item">
+      <img src="https://picsum.photos/seed/b/480/320" srcset="https://picsum.photos/seed/b/480/320 480w,
+                https://picsum.photos/seed/c/768/512 768w,
+                https://picsum.photos/seed/a/1024/683 1024w" sizes="(max-width: 600px) 100vw, 
+        (max-width: 1023px) 80vw, 
+        60vw" alt="Foto responsive B">
+      <figcaption>Foto B</figcaption>
+    </figure>
+    <figure class="item">
+      <img src="https://picsum.photos/seed/c/480/320" srcset="https://picsum.photos/seed/c/480/320 480w,
+                https://picsum.photos/seed/a/768/512 768w,
+                https://picsum.photos/seed/b/1024/683 1024w"         sizes="(max-width: 600px) 100vw, 
+        (max-width: 1023px) 80vw, 
+        60vw" alt="Foto responsive C">
+      <figcaption>Foto C</figcaption>
+    </figure>
+  </div>
+</body>
+
+</html>

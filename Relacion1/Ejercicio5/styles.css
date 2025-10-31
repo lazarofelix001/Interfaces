@@ -1,0 +1,50 @@
+/* Estilos base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap; /* Permite que las columnas se ajusten en varias filas si es necesario */
+}
+
+.col {
+  background-color: #f0f0f0;
+  padding: 20px;
+  text-align: center;
+  flex: 1 1 100%; /* Cada columna ocupa el 100% del ancho en dispositivos pequeños */
+}
+
+/* Media query para pantallas más grandes */
+@media only screen and (min-width: 768px) {
+  .col {
+    flex: 1 1 33.33%; /* Las columnas se dividen en tres partes iguales en pantallas grandes */
+  }
+}
+
+
+/* Ejercicio 5: Cambiar disposición */
+/* Móviles (≤480px): vertical */
+@media only screen and (max-width: 480px) {
+  .container { flex-direction: column; }
+  .col { flex: 1 1 100%; }
+}
+
+/* Tabletas (481px–768px): horizontal con dos columnas y una debajo */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .container { flex-direction: row; }
+  .col { flex: 1 1 50%; }
+}
+
+/* Escritorio (≥769px): tres columnas en una fila */
+@media only screen and (min-width: 769px) {
+  .container { flex-direction: row; }
+  .col { flex: 1 1 33.33%; }
+}

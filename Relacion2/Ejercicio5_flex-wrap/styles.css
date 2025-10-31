@@ -1,0 +1,24 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Arial, sans-serif; padding: 20px; }
+h1 { margin-bottom: 16px; }
+h2 { margin: 20px 0 8px; }
+.container {
+  display: flex;
+  gap: 8px;
+  border: 2px solid #333;
+  padding: 10px;
+  min-height: 120px;
+}
+.ancho-fijo { width: 500px; } /* para visualizar el wrap */
+.item {
+  background: #87ceeb;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 4px;
+  width: 200px;
+  padding: 16px;
+}
+.fw-nowrap { flex-wrap: nowrap; }
+.fw-wrap { flex-wrap: wrap; }
+.fw-wrap-reverse { flex-wrap: wrap-reverse; }

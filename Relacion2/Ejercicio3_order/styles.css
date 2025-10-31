@@ -1,0 +1,28 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Arial, sans-serif; padding: 20px; }
+h1 { margin-bottom: 16px; }
+h2 { margin: 20px 0 8px; }
+.container {
+  display: flex;
+  gap: 8px;
+  border: 2px solid #333;
+  padding: 10px;
+  min-height: 80px;
+}
+.box {
+  background: #87ceeb;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  padding: 16px;
+  border-radius: 4px;
+}
+
+.container { min-height: 80px; }
+.orden-normal .box { order: 0; }
+.orden-final .b1 { order: 3; }
+.orden-primero .b3 { order: -1; }
+/* Reordenado libre: 2, 3, 1 */
+.orden-libre .b2l { order: 1; }
+.orden-libre .b3l { order: 2; }
+.orden-libre .b1l { order: 3; }

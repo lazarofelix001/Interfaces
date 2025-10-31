@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --gap: 16px;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+}
+
+.site-header {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: var(--gap);
+  padding: 12px var(--gap);
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.brand {
+  font-weight: 700;
+}
+
+.nav-toggle {
+  position: absolute;
+  left: -9999px;
+}
+
+.burger {
+  cursor: pointer;
+  display: inline-grid;
+  gap: 5px;
+}
+
+.burger span {
+  width: 24px;
+  height: 2px;
+  background: #111;
+  display: block;
+}
+
+.menu {
+  grid-column: 1 / -1;
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  padding-bottom: 8px;
+}
+
+/* TODO:
+muestra el menú solo cuando el checkbox está marcado
+.nav-toggle:checked ~ .menu { display: flex; }
+
+@media (min-width:1024px) {
+  En pantallas grandes, esconde el menu hamburguesa y muestralo en el header
+} */
+.menu a {
+  text-decoration: none;
+  color: #111;
+  padding: 8px 10px;
+  border-radius: 8px;
+}
+
+.menu a:hover,
+.menu a:focus-visible {
+  background: #f3f4f6;
+  outline: none;
+}
+
+.content {
+  padding: 24px;
+  max-width: 900px;
+  margin: 0 auto;
+}

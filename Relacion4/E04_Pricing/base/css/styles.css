@@ -1,102 +1,31 @@
-* {
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
-}
-
-body {
-  margin: 0;
-  padding: 20px;
-  background: #f9f9f9;
-  color: #333;
-}
-
-header,
-footer {
-  background: #004466;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-}
-
-.sidebar {
-  background: #e0e0e0;
-  padding: 20px;
-}
-
-.content {
-  background: #fff;
-  padding: 20px;
-}
-
-.card,
-.plan {
-  background: #fff;
-  border: 1px solid #ddd;
-  border-radius: 6px;
-  padding: 16px;
-}
-
-.btn {
-  display: inline-block;
-  padding: 8px 12px;
-  background: #004466;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 4px;
-  text-align: center;
-}
-
-.btn:hover {
-  background: #006699;
-}
-
-.nav {
-  background: #004466;
-  color: #fff;
-  padding: 12px;
-}
-
-.menu a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.menu a:hover {
-  text-decoration: underline;
-}
+* { box-sizing: border-box; font-family: Arial, sans-serif; }
+body { margin: 0; padding: 20px; background: #f9f9f9; color: #333; }
+header, footer { background: #004466; color: #fff; padding: 20px; text-align: center; }
+.sidebar { background: #e0e0e0; padding: 20px; }
+.content { background: #fff; padding: 20px; }
+.card, .plan { background: #fff; border: 1px solid #ddd; border-radius: 6px; padding: 16px; }
+.btn { display: inline-block; padding: 8px 12px; background: #004466; color: #fff; text-decoration: none; border-radius: 4px; text-align: center; }
+.btn:hover { background: #006699; }
+.nav { background: #004466; color: #fff; padding: 12px; }
+.menu a { color: #fff; text-decoration: none; }
+.menu a:hover { text-decoration: underline; }
 
 .pricing {
   /* TODO: display:flex */
-  display: flex;
   /* TODO: align-items: stretch */
-  align-items: stretch;
   /* TODO: gap: 16px */
-  gap: 16px;
 }
 
 .plan {
   /* TODO: display:flex */
-  display: flex;
   /* TODO: flex-direction: column */
-  flex-direction: column;
   /* TODO: flex: 1 1 0 */
-  flex: 1 1 0;
 }
 
-.plan .btn {
-  /* TODO: margin-top: auto */
-  margin-top: auto;
-}
+.plan .btn { /* TODO: margin-top: auto */ }
 
-.plan.destacado {
-  /* TODO: flex: 1.5 1 0 */
-  flex: 1.5 1 0;
-  border: 2px solid #004466;
-}
+.plan.destacado { /* TODO: flex: 1.5 1 0 */ border: 2px solid #004466; }
 
 @media (max-width: 767.98px) {
-  .pricing {
-    /* TODO: flex-direction: column */
-    flex-direction: column;
-  }
+  .pricing { /* TODO: flex-direction: column */ }
 }

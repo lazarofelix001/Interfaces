@@ -1,0 +1,35 @@
+.layout {
+    max-width: 64rem;
+    width: 90%;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+.card {
+    width: 100%;
+    max-width: 40rem;
+    margin: 0 auto;
+    border: 1px solid #e3e3e3;
+    border-radius: .5rem;
+    overflow: hidden;
+}
+
+.card__img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.card__body {
+    padding: 1rem;
+}
+
+.card__title {
+    font-size: 1.25rem;
+    margin: 0 0 .5rem 0;
+}
+
+.card__text {
+    font-size: 1rem;
+    margin: 0;
+}

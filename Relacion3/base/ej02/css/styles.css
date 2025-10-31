@@ -1,0 +1,20 @@
+.layout {
+    /* TODO: Contenedor centrado con ancho máximo y márgenes auto */
+}
+
+.card {
+    /* TODO: Ancho en %, borde/sombra, radio, overflow si procede */
+}
+
+.card__img {
+    /* TODO: display:block; width:100%; height:auto; */
+}
+
+.card__body {
+    /* TODO: Usa rem para paddings */
+}
+
+.card__title,
+.card__text {
+    /* TODO: Tipografía con rem */
+}

@@ -1,0 +1,48 @@
+/* Estilos base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap; /* Permite que las columnas se ajusten en varias filas si es necesario */
+  gap: 10px; /* Espacio entre columnas */
+}
+
+.col {
+  background-color: #f0f0f0;
+  padding: 20px;
+  text-align: center;
+  flex: 1 1 100%; /* Cada columna ocupa el 100% del ancho en dispositivos pequeños */
+}
+
+/* Media query para pantallas más grandes */
+@media only screen and (min-width: 768px) {
+  .col {
+    flex: 1 1 33.33%; /* Las columnas se dividen en tres partes iguales en pantallas grandes */
+  }
+}
+
+
+/* Ejercicio 6: Espaciado dinámico */
+/* Móviles: sin separación */
+@media only screen and (max-width: 480px) {
+  .container { gap: 0; }
+}
+
+/* Tabletas: 10px */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .container { gap: 10px; }
+}
+
+/* Escritorio: 30px */
+@media only screen and (min-width: 769px) {
+  .container { gap: 30px; }
+}

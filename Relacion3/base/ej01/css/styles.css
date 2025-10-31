@@ -1,0 +1,23 @@
+/* TODO: Define el tamaño de fuente raíz si lo necesitas (html { ... }) */
+/* TODO: Aplica un ancho máximo al .wrapper usando unidades relativas si procede */
+
+.bloque {
+  /* TODO: Añade separación vertical y borde/sombra (elige unidades) */
+}
+
+/* Bloque A: usa px para font-size, margin, padding, etc. */
+.bloque--px {
+  /* TODO */
+}
+
+/* Bloque B: define font-size en el contenedor y usa em dentro */
+.bloque--em {
+  /* TODO */
+}
+
+/* Bloque C: usa rem en títulos y párrafos */
+.bloque--rem {
+  /* TODO */
+}
+
+/* TODO: Estiliza h1, h2, p con unidades acordes al bloque */

@@ -3,7 +3,7 @@
 **Objetivo (resultado único):**  
 Construye un layout responsive usando **solo Flexbox** con estas reglas:
 
-- **Móvil (< 768px):** disposición en **columna**: Cabecera → Contenido → Lateral → Pie.
+- **Móvil (< 768px):** disposición en **columna**: Cabecera → Lateral → Contenido  → Pie.
 - **Escritorio (≥ 768px):** disposición en **fila** para el bloque central: el **lateral** (ancho fijo 280px) a la izquierda y el **contenido** ocupando el resto. Cabecera y pie a anchura completa arriba y abajo.
 - Separación uniforme entre bloques internos del layout mediante `gap`.
 
@@ -19,4 +19,3 @@ Completa los `TODO` en `css/styles.css` para:
 - Móvil: orden **Cabecera → Contenido → Lateral → Pie** en columna.
 - Escritorio: `.layout` en fila con **sidebar** (280px) a la izquierda y **content** creciendo para ocupar el resto.
 - `gap` de 16px entre columna lateral y contenido.
- 

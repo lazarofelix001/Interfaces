@@ -1,0 +1,3 @@
+.head, .foot { width: 100%; padding: 1rem; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; }
+.main { min-height: 60vh; width: 92%; max-width: 70rem; margin: 0 auto; display: block; }
+.intro { margin: 2rem 0; padding: 1rem; font-size: 1rem; }

@@ -1,0 +1,33 @@
+html {
+    font-size: 16px;
+}
+
+.nav {
+    width: 92%;
+    max-width: 70rem;
+    margin: 0 auto;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.nav__brand {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.nav__links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav__links a {
+    text-decoration: none;
+    padding: .5rem .75rem;
+    font-size: 1rem;
+}

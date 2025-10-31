@@ -33,23 +33,3 @@ footer footer
 3. A partir de 1024px, aplica la cuadrícula de 2 columnas con las áreas indicadas.  
 4. Da estilos básicos a cada bloque para distinguirlos visualmente.  
 
----
-
-## 💡 Pistas
-- `grid-template-areas`  
-- `grid-area`  
-- `grid-template-columns`  
-- `@media (min-width: 1024px)`  
-
----
-
-## 📁 Estructura de carpetas
-```
-ej3-base/
-  index.html
-  styles.css
-
-ej3-solucion/
-  index.html
-  styles.css
-```

@@ -1,0 +1,27 @@
+* { box-sizing: border-box; }
+:root { --gap: 16px; }
+body { margin: 0; font-family: system-ui, sans-serif; }
+.site-header { position: relative; display: grid;
+grid-template-columns: auto 1fr auto;
+align-items: center;
+gap: var(--gap);
+padding: 12px var(--gap);
+border-bottom: 1px solid #e5e7eb; }
+.brand { font-weight: 700; }
+.burger { cursor: pointer; display: inline-grid; gap: 5px; background:none; border:0; padding:8px; }
+.burger span { width: 24px; height: 2px; background: #111; display: block; transition: transform .25s ease, opacity .2s ease; transform-origin: 12px 1px; }
+.overlay { position: fixed; inset: 0; background: rgba(0,0,0,.5); opacity: 0; pointer-events: none; transition: opacity .3s ease; }
+.menu { position: fixed; top: 0; right: 0; width: 260px; height: 100dvh; background: #fff; padding: 24px; display: flex; flex-direction: column; gap: 12px; transform: translateX(100%); transition: transform .3s ease; }
+.menu.is-open { transform: translateX(0); }
+.overlay.is-active { opacity: 1; pointer-events: auto; }
+.burger.is-open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.burger.is-open span:nth-child(2) { opacity: 0; }
+.burger.is-open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+@media (min-width: 1024px) {
+  .burger, .overlay { display: none; }
+  .menu { position: static; transform: none; height: auto; width: auto; flex-direction: row; gap: 16px; padding: 0; }
+  .menu[hidden] { display: flex; }
+}
+.menu a { text-decoration: none; color: #111; padding: 8px 10px; border-radius: 8px; }
+.menu a:hover, .menu a:focus-visible { background: #f3f4f6; outline: none; }
+.content { padding: 24px; max-width: 900px; margin: 0 auto; }

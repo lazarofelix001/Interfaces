@@ -1,0 +1,19 @@
+* { box-sizing: border-box; }
+body { font-family: system-ui, sans-serif; margin: 24px; }
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+.item {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.item img { width: 100%; display: block; }
+.item figcaption { padding: 8px; text-align: center; }
+.item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}

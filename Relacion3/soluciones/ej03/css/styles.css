@@ -1,0 +1,27 @@
+.hero {
+    height: 100vh;
+    background: #202a44;
+    color: white;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+
+.hero__inner {
+    width: 90%;
+    max-width: 60rem;
+}
+
+.hero__title {
+    font-size: clamp(2rem, 6vw, 4rem);
+    margin: 0 0 1rem 0;
+}
+
+.hero__cta {
+    display: inline-block;
+    padding: .75rem 1.25rem;
+    border: 2px solid currentColor;
+    border-radius: .5rem;
+    font-size: 1rem;
+    text-decoration: none;
+}
