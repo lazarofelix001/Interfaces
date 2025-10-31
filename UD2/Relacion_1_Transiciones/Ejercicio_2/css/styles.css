@@ -1,0 +1,18 @@
+/*
+RELACIÓN 1 · EJERCICIO 2 · Funciones de temporización
+Configura una figura diferente para cada función de temporización: ease, linear, ease-in y ease-out.
+Al pasar el ratón por encima, las figuras deben aumentar su tamaño de 100 px a 150 px en 0.5 s.
+*/
+
+:root { --lado: 100px; }
+
+html, body { margin: 0; padding: 0; }
+body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; padding: 24px; }
+.lienzo { display: grid; gap: 24px; grid-auto-flow: column; align-items: center; }
+.figura { width: var(--lado); height: var(--lado); background: #1e90ff; }
+.circulo { border-radius: 50%; }
+.rombo { transform: rotate(45deg); }
+
+:root { --lado: 100px; }
+.lienzo { grid-template-columns: repeat(4, minmax(120px, 1fr)); text-align: center; }
+.figura { display:flex; align-items:center; justify-content:center; }

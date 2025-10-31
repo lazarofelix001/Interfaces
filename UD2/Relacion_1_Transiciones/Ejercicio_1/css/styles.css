@@ -1,0 +1,14 @@
+/*
+RELACIÓN 1 · EJERCICIO 1 · Transición de color y tamaño
+Haz que las figuras geométricas cambien de color y tamaño al pasar el ratón por encima.
+Cada figura debe tener una duración de transición diferente: 0.2 s, 0.5 s y 1 s.
+*/
+
+:root { --lado: 100px; }
+
+html, body { margin: 0; padding: 0; }
+body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; padding: 24px; }
+.lienzo { display: grid; gap: 24px; grid-auto-flow: column; align-items: center; }
+.figura { width: var(--lado); height: var(--lado); background: #1e90ff; }
+.circulo { border-radius: 50%; }
+.rombo { transform: rotate(45deg); }

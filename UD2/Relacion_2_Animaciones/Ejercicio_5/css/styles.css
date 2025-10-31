@@ -1,0 +1,17 @@
+/*
+RELACIÓN 2 · EJERCICIO 5 · Movimiento combinado
+Aplica una animación en la que las figuras se desplacen 200 px hacia la derecha, cambien de color y regresen a su posición original.
+La animación debe durar 3 s y repetirse de forma infinita.
+*/
+
+:root { --lado: 100px; }
+
+html, body { margin: 0; padding: 0; }
+body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; padding: 24px; }
+.lienzo { display: grid; gap: 24px; grid-auto-flow: column; align-items: center; }
+.figura { width: var(--lado); height: var(--lado); background: #1e90ff; }
+.circulo { border-radius: 50%; }
+.rombo { transform: rotate(45deg); }
+
+:root { --lado: 120px; }
+.lienzo { display: grid; place-items: center; min-height: 60vh; }
