@@ -1,0 +1,15 @@
+/*
+RELACIÓN 4 · EJERCICIO 5 · Loader e indicador de carga
+Crea un loader que gire indefinidamente usando @keyframes.
+Debe tener forma circular (o cuadrada) y un borde que marque el giro.
+La duración debe ser de 2s con función de tiempo linear.
+Debe poder reutilizarse en cualquier parte de la página.
+*/
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 4px solid #e5e5e5;
+  border-top: 4px solid #1e90ff;
+  border-radius: 50%;
+}

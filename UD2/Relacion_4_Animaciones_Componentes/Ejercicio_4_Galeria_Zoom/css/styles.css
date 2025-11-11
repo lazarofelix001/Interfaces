@@ -1,0 +1,11 @@
+/*
+RELACIÓN 4 · EJERCICIO 4 · Galería de imágenes con efecto de zoom
+Añade una animación o transición a las imágenes para que al pasar el ratón aumenten ligeramente su tamaño (scale).
+La transición debe durar 0.4s.
+Opcional: añadir sombra o borde durante el hover.
+Comprueba que la imagen no se deforma y sigue dentro de su contenedor.
+*/
+
+.galeria { display: flex; gap: 1rem; }
+.item-galeria { overflow: hidden; border-radius: 6px; background: #fff; }
+.item-galeria img { display: block; width: 200px; height: 130px; object-fit: cover; }

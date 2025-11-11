@@ -6,54 +6,57 @@ Cada figura debe tener una duración de transición diferente: 0.2 s, 0.5 s y 1 
 
 :root { --lado: 100px; }
 
-html, body { margin: 0; padding: 0; }
-body {
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
-  padding: 24px;
-}
-.lienzo {
-  display: grid;
-  gap: 24px;
-  grid-auto-flow: column;
-  align-items: center;
-}
-
-.figura {
+.cuadrado {
   width: var(--lado);
   height: var(--lado);
   background: #1e90ff;
-}
-
-.cuadrado {
-  transition: all 0.2s;
+  display: block;
 }
 
 .circulo {
+  width: var(--lado);
+  height: var(--lado);
   border-radius: 50%;
-  transition: all 0.5s;
+  background: #1e90ff;
+  display: block;
 }
 
 .triangulo {
   width: 0;
   height: 0;
+  display: block;
+  border-left: calc(var(--lado) / 2) solid transparent;
+  border-right: calc(var(--lado) / 2) solid transparent;
+  border-bottom: var(--lado) solid #1e90ff;
   background: transparent;
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
-  border-bottom: 100px solid #1e90ff;
-  transition: all 1s;
 }
 
-.figura:hover {
-  background: crimson;
-  transform: scale(1.2);
+.rombo {
+  width: var(--lado);
+  height: var(--lado);
+  background: #1e90ff;
+  transform: rotate(45deg);
+  transform-origin: center;
+  display: block;
 }
 
-.triangulo:hover {
-  
-  background: transparent;
-  border-left: 50px solid transparent;
-  border-right:50px solid transparent;
-  border-bottom:100px solid crimson;
-  
+.rectangulo {
+  width: 160px;
+  height: 90px;
+  background: #1e90ff;
+  display: block;
 }
 
+
+/* PARTE QUE NOS IMPORTA: */
+
+.lienzo { grid-template-columns: repeat(3, minmax(120px, 1fr)); }
+
+.cuadrado { transition: background-color 0.2s ease, transform 0.2s ease; }
+.cuadrado:hover { background: #ff7675; transform: scale(1.2); }
+
+.circulo { transition: background-color 0.5s ease, transform 0.5s ease; }
+.circulo:hover { background: #ff7675; transform: scale(1.2); }
+
+.triangulo { transition: transform 1s ease; }
+.triangulo:hover { transform: translateY(-5px) scale(1.2); }

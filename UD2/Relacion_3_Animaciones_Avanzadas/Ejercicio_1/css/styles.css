@@ -1,0 +1,39 @@
+/*
+RELACIÓN 3 · EJERCICIO 1 · animation-fill-mode
+Crea una animación en la que cuatro cuadrados aparezcan de izquierda a derecha, cada uno usando un valor distinto de animation-fill-mode: none, forwards, backwards y both.
+Cada cuadrado debe moverse 150px hacia la derecha y cambiar su opacidad de 0 a 1 en 2s.
+Usa un pequeño delay entre ellos (0s, 0.5s, 1s, 1.5s).
+Observa el comportamiento al final de la animación.
+*/
+
+:root { --lado: 100px; }
+
+.cuadrado {
+  width: var(--lado);
+  height: var(--lado);
+  background: #1e90ff;
+  opacity: 0;
+}
+
+@keyframes mover {
+  0% { transform: translateX(0); opacity: 0; }
+  100% { transform: translateX(150px); opacity: 1; }
+}
+
+.fill-none {
+  animation: mover 2s ease-in-out 0s 1 normal none;
+}
+
+.fill-forwards {
+  animation: mover 2s ease-in-out 0.5s 1 normal forwards;
+}
+
+.fill-backwards {
+  animation: mover 2s ease-in-out 1s 1 normal backwards;
+}
+
+.fill-both {
+  animation: mover 2s ease-in-out 1.5s 1 normal both;
+}
+
+.lienzo { display: grid; grid-template-columns: repeat(4, minmax(120px, 1fr)); gap: 24px; }

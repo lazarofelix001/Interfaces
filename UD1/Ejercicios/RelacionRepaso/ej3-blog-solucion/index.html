@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Blog — Artículo largo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header"><h1>Mi Blog</h1></header>
+
+  <main class="layout">
+    <article class="content">
+      <h2>Título del artículo</h2>
+      <figure>
+        <img src="img/cover-480.svg"
+             srcset="img/cover-480.svg 480w, img/cover-768.svg 768w, img/cover-1024.svg 1024w"
+             sizes="(max-width: 640px) 100vw, (max-width: 1023px) 80vw, 60vw"
+             alt="Imagen de cabecera del artículo">
+        <figcaption>Imagen responsiva con srcset/sizes</figcaption>
+      </figure>
+
+      <h3>Vídeo local (responsive 16:9)</h3>
+      <div class="ratio">
+        <video controls poster="img/cover-768.svg">
+          <source src="media/demo.mp4" type="video/mp4">
+          Tu navegador no soporta el video HTML5.
+        </video>
+      </div>
+
+      <p>Más contenido…</p>
+
+      <table class="table-scroll">
+        <thead><tr><th>Col 1</th><th>Col 2</th><th>Col 3</th></tr></thead>
+        <tbody><tr><td>A</td><td>B</td><td>C</td></tr></tbody>
+      </table>
+    </article>
+
+    <aside class="sidebar">
+      <h3>Notas</h3>
+      <ul><li>Nota 1</li><li>Nota 2</li></ul>
+    </aside>
+  </main>
+</body>
+</html>

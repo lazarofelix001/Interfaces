@@ -1,0 +1,47 @@
+/*
+RELACIÓN 4 · EJERCICIO 6 · Animación de aparición por scroll
+Prepara los estilos para que un bloque comience con:
+  opacity: 0;
+  transform: translateY(30px);
+Al aplicarle una clase (por ejemplo .visible) debe animarse hasta:
+  opacity: 1;
+  transform: translateY(0);
+La animación debe durar 1s y usar animation-fill-mode: forwards para mantener el estado final.
+IMPORTANTE:
+  Para que esto se active al hacer scroll en una página real, hay que añadir la clase .visible con JavaScript, por ejemplo:
+
+  const items = document.querySelectorAll('.scroll-item');
+  const options = { threshold: 0.3 };
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, options);
+  items.forEach(item => observer.observe(item));
+
+En este ejercicio os doy el css casi hecho, lo terminais y añadis este JS a la pagina .
+*/
+
+.contenedor-scroll {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.scroll-item {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 6px;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.scroll-item.visible {
+  animation: aparecer 1s ease forwards;
+}
+
+@keyframes aparecer {
+  
+}

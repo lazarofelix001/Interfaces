@@ -3,17 +3,35 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Relación 1 · Ejercicio_2</title>
+  <title>Relacion 1 Transiciones · Ejercicio_2</title>
   <link rel="stylesheet" href="css/styles.css">
+  <style>
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; padding: 24px; }
+    .lienzo { display: grid; gap: 24px; grid-auto-flow: column; align-items: center; justify-content: start; }
+    .label { font-size: 12px; text-align: center; margin-top: 6px; color:#333 }
+    .wrap { display:flex; flex-direction:column; align-items:center; gap:6px; }
+  </style>
 </head>
 <body>
   <main>
-    <h1>Relación 1 · Ejercicio_2</h1>
+    <h1>Relacion 1 Transiciones · Ejercicio_2</h1>
     <section class="lienzo" aria-label="Zona de figuras">
-<div class="figura circulo ease" aria-label="Círculo con ease">ease</div>
-<div class="figura circulo linear" aria-label="Círculo con linear">linear</div>
-<div class="figura circulo ease-in" aria-label="Círculo con ease-in">ease-in</div>
-<div class="figura circulo ease-out" aria-label="Círculo con ease-out">ease-out</div>
+<div class="wrap">
+      <div class="circulo ease"></div>
+      <div class="label">ease</div>
+    </div>
+    <div class="wrap">
+      <div class="circulo linear"></div>
+      <div class="label">linear</div>
+    </div>
+    <div class="wrap">
+      <div class="circulo ease-in"></div>
+      <div class="label">ease-in</div>
+    </div>
+    <div class="wrap">
+      <div class="circulo ease-out"></div>
+      <div class="label">ease-out</div>
+    </div>
     </section>
   </main>
 </body>

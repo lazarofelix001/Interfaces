@@ -1,0 +1,9 @@
+/*
+RELACIÓN 4 · EJERCICIO 2 · Navegación con efecto hover animado
+Aplica una animación a los enlaces de navegación para que al pasar el ratón cambie el color de fondo de forma suave (0.3s).
+Añade también una línea o subrayado que aparezca de izquierda a derecha bajo el enlace.
+El efecto debe aplicarse solo al enlace sobre el que se hace hover.
+*/
+
+.nav { display: flex; gap: 1rem; background: #fff; padding: 1rem; border-radius: 8px; }
+.nav-link { position: relative; text-decoration: none; color: #333; padding-bottom: .25rem; }

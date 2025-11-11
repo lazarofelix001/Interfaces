@@ -1,0 +1,40 @@
+/*
+RELACIÓN 3 · EJERCICIO 2 · animation-direction
+Crea una animación en la que cuatro círculos se desplacen 200px hacia la derecha y regresen, usando distintos valores de animation-direction: normal, reverse, alternate y alternate-reverse.
+Cada círculo debe tardar 3s en completar la animación y repetirla indefinidamente.
+*/
+
+:root { --lado: 100px; }
+
+.circulo {
+  width: var(--lado);
+  height: var(--lado);
+  border-radius: 50%;
+  background: #1e90ff;
+}
+
+@keyframes desplazar {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(200px); }
+}
+
+.dir-normal {
+  animation: desplazar 3s  infinite normal;
+  background: red;
+}
+
+.dir-reverse {
+  animation: desplazar 3s linear infinite reverse;
+  background: green;
+}
+
+.dir-alternate {
+  animation: desplazar 3s linear infinite alternate;
+  background: yellow;
+}
+
+.dir-alternate-reverse {
+  animation: desplazar 3s linear infinite alternate-reverse;
+}
+
+.lienzo { display: grid; grid-template-columns: repeat(4, minmax(120px, 1fr)); gap: 24px; }

@@ -1,0 +1,10 @@
+/*
+RELACIÓN 4 · EJERCICIO 3 · Slider de contenido con transición
+Crea una animación para simular el cambio de una diapositiva a otra.
+La diapositiva debe entrar mediante desplazamiento horizontal (translateX) o desvanecimiento (opacity) en 1s.
+La animación debe poder aplicarse tanto a imágenes como a bloques de texto.
+Usa clases como .slide-activa para indicar cuál se debe mostrar.
+*/
+
+.slider { max-width: 600px; background: #fff; padding: 1.5rem; border-radius: 8px; }
+.slide { background: #eaf4ff; padding: 1rem; border-radius: 4px; }

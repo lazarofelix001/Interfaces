@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>La Buena Mesa</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">La Buena Mesa</div>
+    <button class="burger" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="menu" id="menu" hidden>
+      <a href="#hero">Inicio</a>
+      <a href="#carta">Carta</a>
+      <a href="#galeria">Galería</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <div class="overlay" hidden></div>
+  </header>
+
+  <section id="hero" class="hero">
+    <picture>
+      <source media="(min-width:1024px)" srcset="img/hero-horiz.svg">
+      <img src="img/hero-vert.svg" alt="Hero del restaurante">
+    </picture>
+    <div class="hero-text">
+      <h1>Cocina de temporada</h1>
+      <a class="btn" href="#carta">Ver carta</a>
+    </div>
+  </section>
+
+  <section id="carta" class="carta">
+    <h2>Carta</h2>
+    <div class="grid-carta">
+      <section class="entrantes"><h3>Entrantes</h3><ul><li>Gazpacho</li><li>Ensaladilla</li></ul></section>
+      <section class="principales"><h3>Principales</h3><ul><li>Arroz</li><li>Pescado</li></ul></section>
+      <section class="postres"><h3>Postres</h3><ul><li>Flan</li><li>Tarta</li></ul></section>
+    </div>
+  </section>
+
+  <section id="galeria" class="grid">
+    <figure class="card">
+      <img src="img/plato1-480.svg"
+           srcset="img/plato1-480.svg 480w, img/plato1-768.svg 768w, img/plato1-1024.svg 1024w"
+           sizes="(max-width: 640px) 100vw, (max-width: 1023px) 50vw, 33vw"
+           alt="Plato 1">
+      <figcaption>Plato 1</figcaption>
+    </figure>
+    <figure class="card">
+      <img src="img/plato2-480.svg"
+           srcset="img/plato2-480.svg 480w, img/plato2-768.svg 768w, img/plato2-1024.svg 1024w"
+           sizes="(max-width: 640px) 100vw, (max-width: 1023px) 50vw, 33vw"
+           alt="Plato 2">
+      <figcaption>Plato 2</figcaption>
+    </figure>
+    <figure class="card">
+      <img src="img/plato3-480.svg"
+           srcset="img/plato3-480.svg 480w, img/plato3-768.svg 768w, img/plato3-1024.svg 1024w"
+           sizes="(max-width: 640px) 100vw, (max-width: 1023px) 50vw, 33vw"
+           alt="Plato 3">
+      <figcaption>Plato 3</figcaption>
+    </figure>
+    <figure class="card">
+      <img src="img/plato4-480.svg"
+           srcset="img/plato4-480.svg 480w, img/plato4-768.svg 768w, img/plato4-1024.svg 1024w"
+           sizes="(max-width: 640px) 100vw, (max-width: 1023px) 50vw, 33vw"
+           alt="Plato 4">
+      <figcaption>Plato 4</figcaption>
+    </figure>
+    <figure class="card">
+      <img src="img/plato5-480.svg"
+           srcset="img/plato5-480.svg 480w, img/plato5-768.svg 768w, img/plato5-1024.svg 1024w"
+           sizes="(max-width: 640px) 100vw, (max-width: 1023px) 50vw, 33vw"
+           alt="Plato 5">
+      <figcaption>Plato 5</figcaption>
+    </figure>
+    <figure class="card">
+      <img src="img/plato6-480.svg"
+           srcset="img/plato6-480.svg 480w, img/plato6-768.svg 768w, img/plato6-1024.svg 1024w"
+           sizes="(max-width: 640px) 100vw, (max-width: 1023px) 50vw, 33vw"
+           alt="Plato 6">
+      <figcaption>Plato 6</figcaption>
+    </figure>
+  </section>
+
+  <section id="contacto" class="contact">
+    <h2>Ubicación</h2>
+    <div class="map"><iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Mapa (demo)" allowfullscreen></iframe></div>
+  </section>
+
+  <footer class="site-footer">© 2025 La Buena Mesa</footer>
+
+  <script src="js/menu.js"></script>
+</body>
+</html>

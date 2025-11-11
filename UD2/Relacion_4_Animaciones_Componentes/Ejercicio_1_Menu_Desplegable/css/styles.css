@@ -1,0 +1,13 @@
+/*
+RELACIÓN 4 · EJERCICIO 1 · Menú desplegable animado
+Añade una animación o transición para que el menú no aparezca de forma brusca.
+El menú debe pasar de height: 0 y opacity: 0 a una altura visible (por ejemplo 200px) y opacity: 1 en 0.5s.
+Usa overflow: hidden para que el contenido no se vea antes de tiempo.
+Prueba con animation-fill-mode: forwards para mantener el menú desplegado.
+*/
+
+body { background: #f6f7fb; }
+.contenedor-menu { max-width: 320px; background: #fff; padding: 1rem; border-radius: 8px; }
+.btn-menu { background: #1e90ff; color: #fff; border: none; padding: .5rem 1rem; border-radius: 4px; cursor: pointer; }
+.menu { background: #2980b9; height: 0; overflow: hidden; }
+.menu a { display: block; color: #fff; padding: .5rem 1rem; text-decoration: none; }

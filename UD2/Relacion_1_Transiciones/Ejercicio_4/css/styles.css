@@ -6,12 +6,66 @@ Todo debe ocurrir de forma suave en 1 s.
 
 :root { --lado: 100px; }
 
-html, body { margin: 0; padding: 0; }
-body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; padding: 24px; }
-.lienzo { display: grid; gap: 24px; grid-auto-flow: column; align-items: center; }
-.figura { width: var(--lado); height: var(--lado); background: #1e90ff; }
-.circulo { border-radius: 50%; }
-.rombo { transform: rotate(45deg); }
+.cuadrado {
+  width: var(--lado);
+  height: var(--lado);
+  background: #1e90ff;
+  display: block;
+}
 
-:root { --lado: 100px; }
+.circulo {
+  width: var(--lado);
+  height: var(--lado);
+  border-radius: 50%;
+  background: #1e90ff;
+  display: block;
+}
+
+.triangulo {
+  width: 0;
+  height: 0;
+  display: block;
+  border-left: calc(var(--lado) / 2) solid transparent;
+  border-right: calc(var(--lado) / 2) solid transparent;
+  border-bottom: var(--lado) solid #1e90ff;
+  background: transparent;
+}
+
+.rombo {
+  width: var(--lado);
+  height: var(--lado);
+  background: #1e90ff;
+  transform: rotate(45deg);
+  transform-origin: center;
+  display: block;
+}
+
+.rectangulo {
+  width: 160px;
+  height: 90px;
+  background: #1e90ff;
+  display: block;
+}
+/* PARTE QUE NOS IMPORTA: */
+
 .lienzo { grid-template-columns: repeat(3, minmax(220px, 1fr)); }
+
+.cuadrado, .circulo {
+  transition: background-color 1s ease, width 1s ease, height 1s ease, transform 1s ease;
+}
+.cuadrado:hover, .circulo:hover {
+  background: #9b59b6;
+  width: 200px;
+  height: 200px;
+  transform: rotate(45deg);
+}
+
+.rombo {
+  transition: background-color 1s ease, width 1s ease, height 1s ease, transform 1s ease;
+}
+.rombo:hover {
+  background: #9b59b6;
+  width: 200px;
+  height: 200px;
+  transform: rotate(90deg);
+}
