@@ -7,8 +7,53 @@ Cada figura debe tener una duración de transición diferente: 0.2 s, 0.5 s y 1 
 :root { --lado: 100px; }
 
 html, body { margin: 0; padding: 0; }
-body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; padding: 24px; }
-.lienzo { display: grid; gap: 24px; grid-auto-flow: column; align-items: center; }
-.figura { width: var(--lado); height: var(--lado); background: #1e90ff; }
-.circulo { border-radius: 50%; }
-.rombo { transform: rotate(45deg); }
+body {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  padding: 24px;
+}
+.lienzo {
+  display: grid;
+  gap: 24px;
+  grid-auto-flow: column;
+  align-items: center;
+}
+
+.figura {
+  width: var(--lado);
+  height: var(--lado);
+  background: #1e90ff;
+}
+
+.cuadrado {
+  transition: all 0.2s;
+}
+
+.circulo {
+  border-radius: 50%;
+  transition: all 0.5s;
+}
+
+.triangulo {
+  width: 0;
+  height: 0;
+  background: transparent;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid #1e90ff;
+  transition: all 1s;
+}
+
+.figura:hover {
+  background: crimson;
+  transform: scale(1.2);
+}
+
+.triangulo:hover {
+  
+  background: transparent;
+  border-left: 50px solid transparent;
+  border-right:50px solid transparent;
+  border-bottom:100px solid crimson;
+  
+}
+
