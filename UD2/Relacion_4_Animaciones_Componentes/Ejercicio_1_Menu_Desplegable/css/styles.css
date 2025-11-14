@@ -9,5 +9,17 @@ Prueba con animation-fill-mode: forwards para mantener el menú desplegado.
 body { background: #f6f7fb; }
 .contenedor-menu { max-width: 320px; background: #fff; padding: 1rem; border-radius: 8px; }
 .btn-menu { background: #1e90ff; color: #fff; border: none; padding: .5rem 1rem; border-radius: 4px; cursor: pointer; }
-.menu { background: #2980b9; height: 0; overflow: hidden; }
+
+.menu {
+  background: #2980b9;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: height 1s ease, opacity 0.5s ease;
+}
+
+.contenedor-menu:hover .menu {
+  height: 200px;
+  opacity: 1;
+}
 .menu a { display: block; color: #fff; padding: .5rem 1rem; text-decoration: none; }

@@ -1,39 +1,36 @@
 /*
 RELACIÓN 4 · EJERCICIO 6 · Animación de aparición por scroll
-Prepara los estilos para que un bloque comience con:
+El objetivo es que cada bloque aparezca suavemente al entrar en el área visible del navegador.
+Inicialmente, cada .scroll-item debe tener:
   opacity: 0;
   transform: translateY(30px);
-Al aplicarle una clase (por ejemplo .visible) debe animarse hasta:
-  opacity: 1;
-  transform: translateY(0);
-La animación debe durar 1s y usar animation-fill-mode: forwards para mantener el estado final.
-IMPORTANTE:
-  Para que esto se active al hacer scroll en una página real, hay que añadir la clase .visible con JavaScript, por ejemplo:
-
+Cuando el usuario haga scroll y se añada la clase .visible desde JavaScript,
+deberá animarse hasta opacity: 1 y translateY(0) en 1s.
+Usa animation-fill-mode: forwards para mantener el estado final.
+JS de referencia usado en el index.html:
   const items = document.querySelectorAll('.scroll-item');
-  const options = { threshold: 0.3 };
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-      }
-    });
-  }, options);
-  items.forEach(item => observer.observe(item));
-
-En este ejercicio os doy el css casi hecho, lo terminais y añadis este JS a la pagina .
+  const observer = new IntersectionObserver(...);
+  item.classList.add('visible');
 */
+
+body {
+  font-family: system-ui, sans-serif;
+  background: #f6f7fb;
+  min-height: 150vh;
+  padding: 2rem;
+}
 
 .contenedor-scroll {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 .scroll-item {
-  background: #fff;
-  padding: 1rem;
-  border-radius: 6px;
+  background: #1e90ff;
+  color: white;
+  padding: 2rem;
+  border-radius: 8px;
   opacity: 0;
   transform: translateY(30px);
 }
@@ -43,5 +40,12 @@ En este ejercicio os doy el css casi hecho, lo terminais y añadis este JS a la 
 }
 
 @keyframes aparecer {
-  
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
